@@ -1,0 +1,8 @@
+3001|amanda|1234567890|amanda@gmail.com|amanda address|drinks
+3002|harry|1234567890|harry@gmail.com|harry address|vegetables
+3003|amy|1234567890|amy@gmail.com|amy address|fruits
+3004|ahchong|1234567890|ahchong@gmail.com|ahchong address|meat
+3006|bo bo|1234567890|bob@gmail.com|bob address|fruits
+3007|junheng|0111122204|halo@gmail.com|jalan cantik|food
+3008|ben|00003424324|jun@gmail.com|dsafsf|food
+3009|boon|01111223394|kaka@gmail.com|jalan kaki|food

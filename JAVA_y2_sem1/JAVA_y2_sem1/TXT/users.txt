@@ -1,0 +1,5 @@
+1001|duntzi|password|am|1234567890|duntzi9@gmail.com
+1002|junheng|123456abc|sm|1234567890|junheng@gmail.com
+1003|boon|123456abc|im|1234567890|boon@gmail.com
+1004|leejuin|123456abc|fm|1234567890|leejuin@gmail.com
+1005|eden|123456abc|pm|1234567890|eden@gmail.com

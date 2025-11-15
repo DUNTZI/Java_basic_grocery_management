@@ -1,0 +1,71 @@
+ERD OWSB system
+users.txt:
+user_id PK (Integer 4 digit)
+username (String)
+password (String)
+role (String) (Eg: Finance/Inventory/Sales/Purchase manager)
+contact_number (String)
+email (String)
+
+items.txt:
+item_id PK (Integer 4 digit)
+item_name (String)
+supplier_id FK 
+category (String) (Eg: groceries/fresh produce/essential goods)
+price (Double) (Eg: 10.50)
+stock_quantity (Integer)
+
+suppliers.txt:
+supplier_id PK (Integer 4 digit)
+supplier_name (String)
+contact_number (String)
+email (String)
+address (String)
+item_supplied (String)
+
+sales_data.txt:
+sales_id PK (Integer 4 digit)
+item_id FK 
+sales_date (Date) (Eg: 30-12-2025)
+quantity_sold (Integer)
+remaining_stock (Integer) (Stock quantity)
+sold_by FK (user_id) (Sold by: Sales Manager)
+
+purchase_requisition.txt:
+pr_id PK (Integer 4 digit)
+item_id FK
+supplier_id FK
+quantity_requested (Integer)
+required_date (Date) (Eg: 30-12-2025)
+raised_by FK (user_id) (Raised_by: Sales Manager/Administrator)
+status (String) (Eg: Pending/Approved/Rejected)
+
+purchase_orders.txt:
+po_id PK (Integer 4 digit)
+pr_id FK 
+item_id FK
+supplier_id FK
+quantity_ordered (Integer)
+order_date (Date) (Eg: 30-12-2025)
+order_by FK (user_id) (Oder by: Purchase Manager/Administrator)
+received_by FK (user_id) (Received by: Inventory Manager)
+approved_by FK (user_id) (String) (Approved by: Financial Manager)
+status (String) (Eg: Pending/Approved/Rejected)
+
+inventory.txt:
+inventory_id PK (Integer 4 digit)
+item_id FK
+stock_level (Integer) (Stock quantity)
+last_updated (Date) (Eg: 30-12-2025)
+received_quantity (Integer)
+updated_by FK (user_id) (Updated by: Finance Manager)
+status (String) (Eg: Pending/Verified/Not verified/Deleted)
+
+finance.txt:
+finance_id PK (Integer 4 digit)
+po_id FK
+approval_status (String) (Eg: Pending/Verified/Not verified)
+payment_status (String) (Eg: Paid/Unpaid)
+payment_date (Date) (Eg: 30-12-2025)
+amount (Double) (Eg: 10.50)
+verified_by FK (user_id) (Verified by: Finance Manager)

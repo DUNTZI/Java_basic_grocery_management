@@ -1,0 +1,10 @@
+2001|milo|3001|drinks|20.0|9
+2002|kale|3002|vegetables|10.0|200
+2003|apple|3003|fruits|20.0|150
+2004|chicken|3004|meat|30.0|100
+2005|milo|3005|drink|20.0|0
+2006|pineapple|3006|fruits|20.0|80
+2007|orange juice|3001|drink|5.0|28
+2008|nasilemak|3007|food|2.0|80
+2009|orange juice|3008|drinks|10.0|100
+2010|banana|3009|fruit|5.0|75
